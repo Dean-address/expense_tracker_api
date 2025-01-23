@@ -24,7 +24,7 @@ class UserSerializer(serializers.ModelSerializer):
             "confirm_password",
             "created_at",
         ]
-        read_only_field = ["user_id", "created_at"]
+        read_only_fields = ["user_id", "created_at"]
 
     def validate(self, data):
         if data["password"] != data["confirm_password"]:
