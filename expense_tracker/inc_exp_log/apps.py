@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class UserConfig(AppConfig):
+class IncExpLogConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "expense_tracker.user"
+    name = "expense_tracker.inc_exp_log"
